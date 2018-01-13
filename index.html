@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>galih.id</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/nav.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- js -->
+</head>
+
+<body>
+    <header>
+        <div class="container clearfix">
+            <div class="nap">
+                <a href="#home">AboutMe</a> <a href="#project">Project</a> <a href="#portfolio">Portfolio</a> </div>
+        </div>
+        <div class="box1"> </div>
+        <div class="box2">
+            <h4>Hi, I am</h4>
+            <h1>Galih</h1>
+            <h4><strong>UI/UX</strong>designer</h4> </div>
+    </header>
+    <!--   isi -->
+    <main class="grey lighten-3">
+        <div id="home" class="container">
+            <div class="section">
+                <div id="project">
+                    <h5 class="judul">Completed Project</h5>
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="portfolio">
+                    <h5 class="judul">Portfolio</h5>
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" /> </div>
+                        <div class="grid-item"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" /> </div>
+                        <div class="grid-item"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" /> </div>
+                        <div class="grid-item"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" /> </div>
+                        <div class="grid-item"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" /> </div>
+                        <div class="grid-item"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" /> </div>
+                        <div class="grid-item"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" /> </div>
+                        <div class="grid-item"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" /> </div>
+                        <div class="grid-item"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" /> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+ 
+</body>
+
+</html>

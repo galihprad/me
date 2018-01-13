@@ -1,0 +1,226 @@
+/* Custom Stylesheet */
+
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html,
+body {
+    font-family: roboto;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    
+}
+
+
+/* force scrollbar */
+
+html {
+    overflow-y: scroll;
+}
+
+.judul {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+#home {
+    padding-top: 120px;
+}
+
+#project {
+    padding-top: 80px;
+}
+
+#portfolio {
+    padding-top: 80px;
+}
+
+.collapsible-body {
+    background-color: #FAFAFA;
+}
+
+.collapsible {
+    box-shadow: none;
+}
+
+img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+.box2 h1 {
+    text-align: right;
+    font-weight: 500;
+    color: white;
+    font-size: 100px;
+}
+
+.box2 h4 {
+    text-align: right;
+    font-weight: 300;
+    color: white;
+}
+
+
+.box1 {
+    width: 400px;
+    height: 400px;
+    top: 10%;
+    position: relative;
+    -webkit-animation-name: anim1;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: anim1;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes anim1 {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+        left: 10%;
+        top: 10%;
+    }
+    100% {
+        background-color: rgb(33,150,243);
+        left: 50%;
+        top: 10%;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes anim1 {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+        left: 30%;
+    }
+    100% {
+        background-color: rgb(33,150,243);
+        left: 50%;
+    }
+}
+
+.box2 {
+    width: 400px;
+    height: 300px;
+    top: -40%;
+    padding-right: 15px;
+    background-color: rgba(0,0,0,0);
+    border: 3px solid white;
+    position: relative;
+    -webkit-animation-name: anim2;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: anim2;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes anim2 {
+    0% {
+        left: 60%;
+    }
+    100% {
+        left: 45%;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes anim2 {
+    0% {
+        left: 60%;
+    }
+    100% {
+        left: 45%;
+    }
+}
+
+
+/* ---- grid ---- */
+
+.grid {
+    background: #DDD;
+}
+
+
+/* clear fix */
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+    width: 33.333%;
+}
+
+.grid-item {
+    float: left;
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
+
+@media all and (max-width: 660px) {
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }
+    img {
+        -webkit-filter: grayscale(0%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+    }
+}
+
